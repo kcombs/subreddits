@@ -1,0 +1,305 @@
+/* MOD VIEW STYLING */
+.sheets { margin-right: 5px }
+
+/* -------------- Styling for Header ------------- */
+
+#header {
+  background-color: #FFF;
+  border-bottom: 1px solid #EEE;
+  box-shadow: 0px 0px 6px #EEE;
+  height: 100px;
+}
+
+#header-bottom-right, #header-bottom-right #userbarToggle { background-color: transparent }
+#header-bottom-right #userbarToggle { border-color: transparent }
+#RESShortcutsEditContainer, #header-img { display: none }
+#header-bottom-left { margin: 20px }
+#sr-header-area {
+  background: transparent;
+  font-style: italic;
+}
+
+.pagename a {
+  font-family: "Didot", Didot, serif;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 2.4em;
+}
+
+
+/*---------- Styling for NavLinks -----------*/
+
+.tabmenu { margin: 0 0 13px 30px }
+.tabmenu li:hover { position: relative }
+.tabmenu li a:hover { color: #4c4c4c }
+.tabmenu li a, .tabmenu li.selected a {
+  background-color: transparent;
+  border: none;
+}
+.tabmenu li a {
+  color: #929292;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.tabmenu li.selected {
+  padding-bottom: 5px;
+  border-bottom: 4px solid;
+}
+
+
+/* Dot above Nav Links */
+.tabmenu li:hover:before {
+  background-color: gray;
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  margin-left: -2.5px;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+}
+
+/* Remove Dot for Selected Nav Button */
+.tabmenu li.selected:hover:before { display: none }
+
+/* Red */
+.tabmenu li:nth-child(1):hover:before { background-color: #ff6e6e }
+.tabmenu li.selected:nth-child(1) { border-color: #ff6e6e }
+.tabmenu li.selected:nth-child(1) a { color: #ff6e6e }
+
+/* Purple */
+.tabmenu li:nth-child(2):hover:before { background-color: #a295ff }
+.tabmenu li.selected:nth-child(2) { border-color: #a295ff }
+.tabmenu li.selected:nth-child(2) a { color: #a295ff }
+
+/* Teal */
+.tabmenu li:nth-child(3):hover:before { background-color: #3be3ca }
+.tabmenu li.selected:nth-child(3) { border-color: #3be3ca }
+.tabmenu li.selected:nth-child(3) a { color: #3be3ca }
+
+/* Pink */
+.tabmenu li:nth-child(4):hover:before { background-color: #FF77E9 }
+.tabmenu li.selected:nth-child(4) { border-color: #FF77E9 }
+.tabmenu li.selected:nth-child(4) a { color: #FF77E9 }
+
+/* Blue */
+.tabmenu li:nth-child(5):hover:before { background-color: #1E72E0 }
+.tabmenu li.selected:nth-child(5) { border-color: #1E72E0 }
+.tabmenu li.selected:nth-child(5) a { color: #1E72E0 }
+
+/* Gold */
+.tabmenu li:nth-child(6):hover:before { background-color: #9a7d2e }
+.tabmenu li.selected:nth-child(6) { border-color: #9a7d2e }
+.tabmenu li.selected:nth-child(6) a { color: #9a7d2e }
+
+/* Dark Green */
+.tabmenu li:nth-child(7):hover:before { background-color: #3C700C }
+.tabmenu li.selected:nth-child(7) { border-color: #3C700C }
+.tabmenu li.selected:nth-child(7) a { color: #3C700C }
+
+/* Remove RES 'Show Images' */
+.tabmenu li:nth-child(8) { display: none }
+
+
+
+/* ----------- Body - Link Posts ------------ */
+
+/* Move Everything Down */
+.content { 
+  margin: 95px 320px 0 10px;
+  box-shadow: 0 0 16px #eee;
+}
+
+/* Top Bar */
+.side h3:nth-of-type(1) {
+  position: absolute;
+  display: block;
+  top: 100px;
+  left: 0px;
+  margin: 25px auto;
+  padding: 7px 20px 10px 14px;
+  background-position: left;
+  white-space: normal;
+  font-family: "Futura Md","Futura",Helvetica,Arial,sans-serif;
+  font-size: 1.8em;
+  font-weight: normal;
+  text-decoration: none;
+  background-color: #E0E0E6;
+  color: #353535;
+  overflow: hidden
+}
+
+.side h3:nth-of-type(1) a:hover { 
+  color: #1E72E0; 
+  background-color: white;
+  padding: 2.5px 0px 5px 0px;
+}
+.side h3:nth-of-type(1) a, 
+.side h3:nth-of-type(1) a:visited {
+  color: #1E72E0;
+  text-decoration: none;
+}
+
+/* Links on Site Table */
+.sitetable.linklisting {
+  background-color: #FAFAFA;
+}
+
+.link {
+  margin-bottom: 7px;
+  padding: 8px 10px 6px 10px;
+  background-color: white;
+  box-shadow: 0 0 6px #d8d8d8;
+}
+
+#siteTable div.thing .flat-list.buttons { visibility: hidden }
+#siteTable div.thing:hover .flat-list.buttons { visibility: visible }
+#siteTable .tagline { font-style: italic }
+#siteTable .tagline > span:first-child, .userTagLink.RESUserTagImage { display: none }
+#siteTable .tagline > span, .voteWeight { visibility: hidden }
+
+.entry .buttons li a, .entry .redditSingleClick { 
+  font-style: italic; 
+  color: #C7C7C7; 
+  font-weight: normal; 
+}
+
+.entry .buttons li.first a { 
+  visibility: visible; 
+  color: #888; 
+  font-weight: bold; 
+  font-style: normal 
+}
+
+/* Sticky Formatting */
+.stickied .midcol.likes, 
+.stickied .tagline, 
+.stickied .flat-list.buttons, 
+.stickied .title > span 
+  { display: none }
+
+/* Remove RES Link Styling */
+#siteTable .RES-keyNav-activeElement {
+  background: transparent!important;
+  outline: none;
+}
+
+/* ---------------- Sidebar Styling ------------------ */
+
+/* Sidebar Title */
+.side h1 a {
+  font-family: "Didot", Didot, serif;
+  font-style: italic;
+  text-decoration: none;
+  font-size: 1.8em;
+}
+
+/* Shared Formatting for Subscribe Buttons */
+.subButtons { padding: 10px }
+.fancy-toggle-button .remove, .fancy-toggle-button .add { 
+  border-radius: 0px;
+  border-width: 0px;
+  background-image: none;
+  padding: 5px 8px;
+  font-family: "Helvetica", Helvetica, Verdana, Arial, sans-serif
+}
+
+/* Subscribe Button */
+.fancy-toggle-button .remove { background-color: #FD9582 }
+.fancy-toggle-button .add { background-color: #70C080 }
+.fancy-toggle-button .remove:hover { background-color: #FFCEC5 }
+.fancy-toggle-button .add:hover { background-color: #58D371 }
+
+/* Remove RES Buttons */
+.RESshortcutside, 
+.REStoggle.RESDashboardToggle
+  { visibility: hidden }
+
+/* Checkboxes */
+.side input[type=checkbox] { display: none }
+.side input[type=checkbox] + label:before {
+  border-radius: 3px;
+  content: " ";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  position: relative;
+  left: 0;
+  bottom: -1px;
+  background-color: #aaa;
+} 
+
+.side input[type=checkbox]:checked + label:before {
+  content: "✓";
+  text-shadow: 1px 1px 1px grey;
+  font-size: 15px;
+  color: #F3F3F3;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 3px
+}
+
+/* Sidebar Drop Down Menu */
+.titlebox hr + ul li {
+  width: 280px;
+  background-color: #f2f2f2;
+  border: none;
+  color: black;
+  display: none;
+  padding: 7px 7px 9px 13px;
+  margin: 0 0 -1px 0;
+  text-align: left;
+  border-top: 1px solid #CCCCCC;
+}
+
+.titlebox hr + ul li:nth-child(1) {
+  display: inline-block;
+  padding: 8px 12px 9px 8px;
+  background-color: #333333;
+  border-top: none;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light","Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  color: #f2f2f2;
+  font-size: 1.4em;
+  font-size: 15px;
+  text-align: center;
+}
+
+.titlebox hr + ul li:nth-child(1):hover {
+  background-color: #F2F2F2;
+  color: #555555;
+}
+
+.titlebox .md hr + ul { margin: 0 }
+.titlebox hr + ul:hover > li { display:block }
+.titlebox hr + ul li:hover { background-color: #DDDDDD }
+.titlebox hr + ul li a:hover { color: black }
+
+
+
+/* ------------------ Styling for Comments Section --------------------- */
+
+.commentarea .entry .buttons li a { 
+  font-style: italic; 
+  color: #C7C7C7; 
+  font-weight: normal; 
+}
+
+.commentarea .entry .buttons li a[onclick="return reply(this)"] { 
+  visibility: visible; 
+  color: #888; 
+  font-weight: bold; 
+  font-style: normal 
+}
+
+
+
+
+/* ------------------ Styling for Submit Screen ---------------------- */
+
+.tabmenu.formtab .selected a { background-color: transparent }
+.formtabs-content, .tabmenu.formtab a { border: none }
