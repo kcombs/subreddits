@@ -8,4 +8,4 @@ Images will be included in each folder, make sure to name them the same title as
 
 ##List of Stylesheets
 
-* [/r/LearnWebDesign](http://www.learnwebdesign.com/)
+* [/r/LearnWebDesign](http://www.reddit.com/r/learnwebdesign/)
