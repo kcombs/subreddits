@@ -1,0 +1,192 @@
+/* main page styling */
+
+body {
+    background-color : #efefef;
+}
+.side {
+    background-color : #efefef;
+}
+.icon-menu a {
+    background-color : #efefef;
+}
+.morelink {
+    background : #efefef;
+    border: none;
+}
+.morelink .nub {
+    display: none;
+}
+
+.leavemoderator {
+    background: none;
+}
+.titlebox form.toggle {
+    background: none;
+}
+.sidebox .spacer {
+    background: none;
+}
+#header {
+    border-bottom-color : #801016;
+    background-color : #c41300;
+}
+#header-img-a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#sr-header-area {
+    border-bottom-color : #801016;
+}
+
+
+/* Change 'readers' box value */
+div.titlebox span.word {
+    display:none;
+}
+div.titlebox span.number:after {
+    content: " Ruby programmers";
+}
+/* Change 'users here now' box value */
+.users-online .word {
+    display:none;
+}
+.users-online .word, .users-online .number:after {
+    content: " programmers here now" !important;
+}
+
+
+/*announcement sticky*/
+div.content {
+/*This lowers the links to create space*/
+margin-top: 50px;
+}
+.titlebox form {
+/*Hack to enable repositioning of child elements*/
+position: static
+}
+.side h3:nth-of-type(1) {
+ /*this code positions the sticky*/
+position:absolute;
+display: block;
+top: 80px;
+left: 40px;
+/*this code styles the sticky*/
+background-color: #F2F2F2;
+color: #555555;
+text-align: left;
+margin: 15px;
+border-radius: 8px;
+width: 50%;
+padding: 7px 0px 7px 40px;
+/*this code creates the image*/
+background-image: url(%%announceicon%%);
+background-repeat: no-repeat;
+background-position: left;
+}
+
+/* for arrow styling */
+
+ .arrow {
+  height: 18px;
+  width: 20px;
+ }
+
+ .arrow.up { 
+  background-image: url(%%rubyuparrowgrey%%);  
+  background-position: 0 0;
+ }
+
+ .arrow.down { 
+  background-image: url(%%rubydownarrowgrey%%);
+  background-position: 0 0;
+ }
+
+ .arrow.upmod { 
+  background-image: url(%%rubyuparrowcolor%%);
+  background-position: 0 0;
+ }
+
+ .arrow.downmod { 
+  background-image: url(%%rubydownarrowcolor%%);
+  background-position: 0 0;
+ }
+body .content .link.compressed .midcol {
+  width: 25px;
+}
+.comment .midcol {
+  width: 25px;
+}
+
+/* tab menu */
+		#header .tabmenu {
+			display: block;
+			position: absolute;
+			top: 30px;
+			right:0px;
+			left: 0px;
+			padding: 7px 0px 3px 0px;
+			height: 25px;
+			background-color: transparent;
+			color: #707070;
+			list-style-type: none;
+			vertical-align: bottom;
+			text-align: center;
+			white-space: nowrap;
+			font-weight: bold;
+			font-size: 15px;
+			min-width: 450px;
+                        margin-left: 200px;
+                        margin-right: 200px;
+		}
+
+		.tabmenu li {
+			display: inline-block;
+			margin:0px;
+		}
+
+		.tabmenu li a {
+			margin: 0px 20px 0px 20px;
+			padding: 2px 5px 7px 5px;
+			background-color: transparent;
+			border: 0px solid;
+			color: #ccc;
+			font-weight: bold;
+			font-size: 15px;
+		}
+
+		.tabmenu li a:hover {border-bottom: 2px solid #1c1c1c;border-top: 2px solid #1c1c1c;color: #eaeaea;text-decoration: none;}
+
+		.tabmenu li.selected a {
+			z-index: 100;
+			background-color: transparent;
+			border: 0px solid;
+			border-top: 2px solid #1c1c1c;
+			border-bottom: 2px solid #1c1c1c;
+			color: #eaeaea;
+		}
+		.tabmenu li.selected a:hover {
+			border-color: #1c1c1c;
+		}
+
+
+
+/*subreddit link*/
+
+.pagename a {
+    padding: 70px 0px 5px 160px;
+    font-size: 0px;
+    background-image: url(%%rubychalkboard%%);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
+						/* Remove any of the lines below to show the link that they hide */
+						.listing-page .tabmenu li:nth-of-type(3),	/* Rising */
+						.listing-page .tabmenu li:nth-of-type(4),	/* Controversial */
+						.listing-page .tabmenu li:nth-of-type(6),	/* Saved links */
+						.listing-page .tabmenu li:nth-of-type(7),	/* Wiki */
+						.listing-page .tabmenu li:nth-of-type(8) 	/* Promoted Links.. seriously leave this one hidden */ 
+						{display:none;}
+
+						/* --------------------------- */
